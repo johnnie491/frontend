@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<title>HM-LuxuryConsultancy</title>
+<link rel="stylesheet" type="text/css" href="index3.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">HM
+           
+        </a>
+        <ul>
+               <li> <a href="#" class="active">Home</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images12/stars.png" id="stars">
+        <img src="images12/moon.png" id="moon">
+        <img src="images12/mountains_behind.png" id="mountains_behind">
+        <h2 id="text">HARSH MANN</h2>
+        <a href="#para" id="btn">Explore</a>
+        <img src="images12/mountains_front.png" id="mountains_front">
+        
+    </section>
+    <div class="para" id="para">
+        <h2>About Brand</h2>
+        <p>As experts in the business of Luxury, Harsh Mann Luxury Consultancy provides 360-degree services in Brand Management ranging from Brand Strategies, Brand Identity, to all types of Communication, Internal or External.
+
+            Our Agency ensures deliveries of end-to-end services to Industries dealing in Fashion, Lifestyle, Perfume, Beauty, Automotive, Premium FMCG/Food, Real Estate/ Home Decor, Media, Events, and more with special emphasis on brand launch to sustainability, all under one roof.
+            
+            Our Key services include: 
+            - Luxury Brand Building Services:
+              Branding and Brand Strategy | Brand Consulting | Brand Advertising | Brand Photography | UI-UX Design | Website Development
+            - Luxury Marketing:
+              Internal & External Brand Communication | Sensorial Marketing | Public Relations | Content Creation | AR & VR Marketing | Influencer Marketing
+            - HNI and UHNI Selling Strategy | High Ticket Value Business Strategy
+            - Retail Consulting:
+              Retail Concept Development | Visual Merchandising | Retail Training | Franchise Model | Buying & Merchandising Strategy | Business Development 
+            - International Brand Expansion | Go to Market Strategy | Market Research | Sustainable Brand Consulting
+            - Luxury Training | Image Consulting
+            - Luxury Concierge.
+             </p>
+            </div>
+    <div class="founder-sec">
+         <img src="images12/harshmann2bw (1) (1).jpg ">
+       
+            <h2>FOUNDER : HARSH MANN</h2>
+            <p>
+                A connoisseur of all things luxurious<br>
+                passionate about the bussiness of 
+                <br>luxuery, Harsh mann has cultivated 
+                <br>deep insights on evolving industry 
+                <br>trends across the world.
+                <br>And his in depth knowledge and understanding
+                <br>of 25 differnet world cultures, make 
+                <br>a keen oberverof new challenges.
+               
+            </p>
+        
+        
+    </div>
+       
+    
+    <script>
+        let stars= document.getElementById('stars');
+        let moon= document.getElementById('moon');
+        let mountains_behind= document.getElementById('mountains_behind');
+        let text= document.getElementById('text');
+        let btn= document.getElementById('btn');
+        let mountains_front= document.getElementById('mountains_front');
+        let header= document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value *0.25 +'px';
+            moon.style.top = value * 1.25 +'px';
+            mountains_behind.style.top = value * 0.5 +'px';
+            mountains_front.style.top = value * 0 +'px';
+            text.style.marginRight = value * 4 +'px';
+            text.style.marginTop = value * 1.5 +'px';
+            btn.style.marginTop = value * 1.5 +'px';
+            header.style.top = value* 0.5+'px';
+        })
+
+      
+    </script>
+</body>
+</html>
